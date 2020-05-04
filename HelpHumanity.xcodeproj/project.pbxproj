@@ -3,11 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2ECBD0F5C04491870626A28A /* Pods_HelpHumanity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B52C080515C2E8B72EEB7 /* Pods_HelpHumanity.framework */; };
+		A8890C86245FF7B70033A1D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8890C85245FF7B70033A1D6 /* GoogleService-Info.plist */; };
+		A8890C88245FFAA60033A1D6 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8890C87245FFAA60033A1D6 /* CircleImage.swift */; };
+		A8890C8A245FFB170033A1D6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8890C89245FFB170033A1D6 /* MapView.swift */; };
+		A8890C8C245FFBE90033A1D6 /* Organisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8890C8B245FFBE90033A1D6 /* Organisation.swift */; };
+		A8890C8E246007AA0033A1D6 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8890C8D246007AA0033A1D6 /* FirestoreService.swift */; };
 		A8FBE978245FF5F500DC8D91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FBE977245FF5F500DC8D91 /* AppDelegate.swift */; };
 		A8FBE97A245FF5F500DC8D91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FBE979245FF5F500DC8D91 /* SceneDelegate.swift */; };
 		A8FBE97C245FF5F500DC8D91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FBE97B245FF5F500DC8D91 /* ContentView.swift */; };
@@ -19,6 +24,11 @@
 /* Begin PBXFileReference section */
 		582593CC13DEA6247708778E /* Pods-HelpHumanity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpHumanity.release.xcconfig"; path = "Target Support Files/Pods-HelpHumanity/Pods-HelpHumanity.release.xcconfig"; sourceTree = "<group>"; };
 		73B5D648DB7C2A97CAAFC1AF /* Pods-HelpHumanity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpHumanity.debug.xcconfig"; path = "Target Support Files/Pods-HelpHumanity/Pods-HelpHumanity.debug.xcconfig"; sourceTree = "<group>"; };
+		A8890C85245FF7B70033A1D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A8890C87245FFAA60033A1D6 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		A8890C89245FFB170033A1D6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		A8890C8B245FFBE90033A1D6 /* Organisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organisation.swift; sourceTree = "<group>"; };
+		A8890C8D246007AA0033A1D6 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
 		A8FBE974245FF5F500DC8D91 /* HelpHumanity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpHumanity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8FBE977245FF5F500DC8D91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8FBE979245FF5F500DC8D91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +55,7 @@
 		A8FBE96B245FF5F500DC8D91 = {
 			isa = PBXGroup;
 			children = (
+				A8890C85245FF7B70033A1D6 /* GoogleService-Info.plist */,
 				A8FBE976245FF5F500DC8D91 /* HelpHumanity */,
 				A8FBE975245FF5F500DC8D91 /* Products */,
 				B19D9136E1548485B781B140 /* Pods */,
@@ -64,8 +75,12 @@
 			isa = PBXGroup;
 			children = (
 				A8FBE977245FF5F500DC8D91 /* AppDelegate.swift */,
+				A8890C8D246007AA0033A1D6 /* FirestoreService.swift */,
 				A8FBE979245FF5F500DC8D91 /* SceneDelegate.swift */,
 				A8FBE97B245FF5F500DC8D91 /* ContentView.swift */,
+				A8890C8B245FFBE90033A1D6 /* Organisation.swift */,
+				A8890C87245FFAA60033A1D6 /* CircleImage.swift */,
+				A8890C89245FFB170033A1D6 /* MapView.swift */,
 				A8FBE97D245FF5F800DC8D91 /* Assets.xcassets */,
 				A8FBE982245FF5F800DC8D91 /* LaunchScreen.storyboard */,
 				A8FBE985245FF5F800DC8D91 /* Info.plist */,
@@ -96,7 +111,6 @@
 				73B5D648DB7C2A97CAAFC1AF /* Pods-HelpHumanity.debug.xcconfig */,
 				582593CC13DEA6247708778E /* Pods-HelpHumanity.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -111,6 +125,7 @@
 				A8FBE970245FF5F500DC8D91 /* Sources */,
 				A8FBE971245FF5F500DC8D91 /* Frameworks */,
 				A8FBE972245FF5F500DC8D91 /* Resources */,
+				C801898E91E0A8B4A5D14188 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8FBE984245FF5F800DC8D91 /* LaunchScreen.storyboard in Resources */,
+				A8890C86245FF7B70033A1D6 /* GoogleService-Info.plist in Resources */,
 				A8FBE981245FF5F800DC8D91 /* Preview Assets.xcassets in Resources */,
 				A8FBE97E245FF5F800DC8D91 /* Assets.xcassets in Resources */,
 			);
@@ -168,6 +184,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		C801898E91E0A8B4A5D14188 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelpHumanity/Pods-HelpHumanity-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelpHumanity/Pods-HelpHumanity-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelpHumanity/Pods-HelpHumanity-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F07D9C018EBC89BD8A902FBC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,7 +230,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8890C8E246007AA0033A1D6 /* FirestoreService.swift in Sources */,
 				A8FBE978245FF5F500DC8D91 /* AppDelegate.swift in Sources */,
+				A8890C8C245FFBE90033A1D6 /* Organisation.swift in Sources */,
+				A8890C88245FFAA60033A1D6 /* CircleImage.swift in Sources */,
+				A8890C8A245FFB170033A1D6 /* MapView.swift in Sources */,
 				A8FBE97A245FF5F500DC8D91 /* SceneDelegate.swift in Sources */,
 				A8FBE97C245FF5F500DC8D91 /* ContentView.swift in Sources */,
 			);
