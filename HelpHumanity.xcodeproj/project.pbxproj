@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2ECBD0F5C04491870626A28A /* Pods_HelpHumanity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B52C080515C2E8B72EEB7 /* Pods_HelpHumanity.framework */; };
 		A8FBE978245FF5F500DC8D91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FBE977245FF5F500DC8D91 /* AppDelegate.swift */; };
 		A8FBE97A245FF5F500DC8D91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FBE979245FF5F500DC8D91 /* SceneDelegate.swift */; };
 		A8FBE97C245FF5F500DC8D91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FBE97B245FF5F500DC8D91 /* ContentView.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		582593CC13DEA6247708778E /* Pods-HelpHumanity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpHumanity.release.xcconfig"; path = "Target Support Files/Pods-HelpHumanity/Pods-HelpHumanity.release.xcconfig"; sourceTree = "<group>"; };
+		73B5D648DB7C2A97CAAFC1AF /* Pods-HelpHumanity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpHumanity.debug.xcconfig"; path = "Target Support Files/Pods-HelpHumanity/Pods-HelpHumanity.debug.xcconfig"; sourceTree = "<group>"; };
 		A8FBE974245FF5F500DC8D91 /* HelpHumanity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpHumanity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8FBE977245FF5F500DC8D91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8FBE979245FF5F500DC8D91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		A8FBE980245FF5F800DC8D91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8FBE983245FF5F800DC8D91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8FBE985245FF5F800DC8D91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C37B52C080515C2E8B72EEB7 /* Pods_HelpHumanity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelpHumanity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ECBD0F5C04491870626A28A /* Pods_HelpHumanity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				A8FBE976245FF5F500DC8D91 /* HelpHumanity */,
 				A8FBE975245FF5F500DC8D91 /* Products */,
+				B19D9136E1548485B781B140 /* Pods */,
+				ACA550DD2BF9EDC4296B26C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +82,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		ACA550DD2BF9EDC4296B26C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C37B52C080515C2E8B72EEB7 /* Pods_HelpHumanity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B19D9136E1548485B781B140 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73B5D648DB7C2A97CAAFC1AF /* Pods-HelpHumanity.debug.xcconfig */,
+				582593CC13DEA6247708778E /* Pods-HelpHumanity.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,6 +107,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8FBE988245FF5F800DC8D91 /* Build configuration list for PBXNativeTarget "HelpHumanity" */;
 			buildPhases = (
+				F07D9C018EBC89BD8A902FBC /* [CP] Check Pods Manifest.lock */,
 				A8FBE970245FF5F500DC8D91 /* Sources */,
 				A8FBE971245FF5F500DC8D91 /* Frameworks */,
 				A8FBE972245FF5F500DC8D91 /* Resources */,
@@ -140,6 +166,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F07D9C018EBC89BD8A902FBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelpHumanity-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A8FBE970245FF5F500DC8D91 /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		A8FBE989245FF5F800DC8D91 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73B5D648DB7C2A97CAAFC1AF /* Pods-HelpHumanity.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +354,7 @@
 		};
 		A8FBE98A245FF5F800DC8D91 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 582593CC13DEA6247708778E /* Pods-HelpHumanity.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
