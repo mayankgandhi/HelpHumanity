@@ -11,6 +11,8 @@ target 'HelpHumanity' do
   # add pods for any other desired Firebase products
   # https://firebase.google.com/docs/ios/setup#available-pods
   pod 'Firebase/Firestore'
+  
+  pod 'FirebaseFirestoreSwift'
 
   # Optionally, include the Swift extensions if you're using Swift.
   pod 'FirebaseFirestoreSwift'
