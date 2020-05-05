@@ -15,7 +15,6 @@ target 'HelpHumanity' do
   pod 'FirebaseFirestoreSwift'
 
   # Optionally, include the Swift extensions if you're using Swift.
-  pod 'FirebaseFirestoreSwift'
 
 
 end

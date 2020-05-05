@@ -5,61 +5,86 @@
 //  Created by Mayank on 04/05/20.
 //  Copyright © 2020 Mayank. All rights reserved.
 //
-import SwiftUI
-import CoreLocation
 
-struct Contact: Codable {
-    var email:String?
-    var name:String?
-    var phone:String?
-    var title:String?
-    
-//    init(email:String, name:String, phone:String, title:String)  {
-//        self.name = name
-//        self.email = email
-//        self.phone = phone
-//        self.title = title
-//    }
+import Foundation
+import Firebase
+
+// A type that can be initialized from a Firestore document.
+protocol DocumentSerializable {
+    init?(dictionary: [String: Any])
 }
 
-//enum Cause: String, CaseIterable, Codable, Hashable {
-//    case children = "Children"
-//    case education = "Education"
-//    case women = "Women"
-//    case diffAbled = "Differently Abled"
-//    case health = "Health"
-//    case covid = "Covid-19"
-//    case hunger = "Hunger"
-//}
+struct Organisation: Identifiable, Codable {
 
-
-struct Organisation: Codable {
+    let id = UUID()
+    var abbreviation:String
+    var cause:String
+    var city:String
+    var country:String
+    var donationLink:String
+    var locationLongitude:Double
+    var locationLatitude:Double
+    var orgName:String
+    var parentOrg:String
+    var website:String
+    
+    enum CodingKeys: String, CodingKey {
+        case abbreviation
+        case cause
+        case city
+        case country
+        case donationLink
+        case locationLongitude
+        case locationLatitude
+        case orgName
+        case parentOrg
+        case website
+    }
     
     
-     var id: String
+    var dictionary: [String: Any] {
+        return [
+            "abbreviation": abbreviation,
+            "cause": cause,
+            "city": city,
+            "country": country,
+            "donationLink": donationLink,
+            "locationLongitude": locationLongitude,
+            "locationLatitude": locationLatitude,
+            "orgName": orgName,
+            "parentOrg": parentOrg,
+            "website": website
+        ]
+    }
     
-     var abbreviation:String
-     var cause: String
-     var city: String
-     var contact: Contact
-     var country: String
-     var donationLink:String
-     var orgName: String
-     var parentOrg: String
-     var website:String
-     var locationCoordinate: CLLocationCoordinate2D?
-    
-//    init(id: String, abbreviation: String, cause: String, city: String, email: String, name: String, phone: String, title: String, country: String, donationLink: String, latitude: Double, longitude: Double, orgName: String, parentOrg: String, website: String) {
-//        self.id = id
-//        self.abbreviation = abbreviation
-//        self.cause = cause
-//        self.city = city
-//        self.contact = Contact(email: email, name: name, phone: phone, title: title)
-//        self.country = country
-//        self.donationLink = donationLink
-//        self.orgName = orgName
-//        self.parentOrg = parentOrg
-//        self.website = website
-//        self.locationCoordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-//    }
 }
+
+extension Organisation: DocumentSerializable {
+    
+    
+    init?(dictionary: [String : Any]) {
+        guard let abbreviation = dictionary["abbreviation"] as? String,
+            let cause = dictionary["cause"] as? String,
+            let city = dictionary["city"] as? String,
+            let country = dictionary["country"] as? String,
+            let donationLink = dictionary["donationLink"] as? String,
+            let locationLongitude = dictionary["locationLongitude"] as? Double ,
+            let locationLatitude = dictionary["locationLatitude"] as? Double,
+            let orgName = dictionary["orgName"] as? String,
+            let parentOrg = dictionary["parentOrg"] as? String,
+            let website = dictionary["website"] as? String else { return nil }
+        
+        self.init(
+            abbreviation: abbreviation, cause: cause,
+            city: city,
+            country: country,
+            donationLink: donationLink,
+            locationLongitude: locationLongitude,
+            locationLatitude: locationLatitude,
+            orgName: orgName,
+            parentOrg: parentOrg,
+            website: website)
+    }
+}
+
+

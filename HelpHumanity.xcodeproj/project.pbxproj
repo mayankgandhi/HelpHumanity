@@ -8,15 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		2ECBD0F5C04491870626A28A /* Pods_HelpHumanity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B52C080515C2E8B72EEB7 /* Pods_HelpHumanity.framework */; };
-		A86BA2BE24603D12007E13AE /* FirestoreGetOrg.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86BA2BD24603D12007E13AE /* FirestoreGetOrg.swift */; };
+		A860250824615E9D00CAE4FB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860250724615E9D00CAE4FB /* DetailView.swift */; };
+		A860250A24615EFD00CAE4FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860250924615EFD00CAE4FB /* ContentView.swift */; };
+		A860250C2461672700CAE4FB /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860250B2461672700CAE4FB /* BlurView.swift */; };
 		A8890C86245FF7B70033A1D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8890C85245FF7B70033A1D6 /* GoogleService-Info.plist */; };
 		A8890C88245FFAA60033A1D6 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8890C87245FFAA60033A1D6 /* CircleImage.swift */; };
 		A8890C8A245FFB170033A1D6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8890C89245FFB170033A1D6 /* MapView.swift */; };
 		A8890C8C245FFBE90033A1D6 /* Organisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8890C8B245FFBE90033A1D6 /* Organisation.swift */; };
 		A8890C90246015A70033A1D6 /* OrganisationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8890C8F246015A70033A1D6 /* OrganisationRow.swift */; };
+		A8BC485424614078008DD929 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BC485324614078008DD929 /* Contact.swift */; };
 		A8FBE978245FF5F500DC8D91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FBE977245FF5F500DC8D91 /* AppDelegate.swift */; };
 		A8FBE97A245FF5F500DC8D91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FBE979245FF5F500DC8D91 /* SceneDelegate.swift */; };
-		A8FBE97C245FF5F500DC8D91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FBE97B245FF5F500DC8D91 /* ContentView.swift */; };
+		A8FBE97C245FF5F500DC8D91 /* OrganisationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FBE97B245FF5F500DC8D91 /* OrganisationView.swift */; };
 		A8FBE97E245FF5F800DC8D91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8FBE97D245FF5F800DC8D91 /* Assets.xcassets */; };
 		A8FBE981245FF5F800DC8D91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8FBE980245FF5F800DC8D91 /* Preview Assets.xcassets */; };
 		A8FBE984245FF5F800DC8D91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8FBE982245FF5F800DC8D91 /* LaunchScreen.storyboard */; };
@@ -25,16 +28,19 @@
 /* Begin PBXFileReference section */
 		582593CC13DEA6247708778E /* Pods-HelpHumanity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpHumanity.release.xcconfig"; path = "Target Support Files/Pods-HelpHumanity/Pods-HelpHumanity.release.xcconfig"; sourceTree = "<group>"; };
 		73B5D648DB7C2A97CAAFC1AF /* Pods-HelpHumanity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpHumanity.debug.xcconfig"; path = "Target Support Files/Pods-HelpHumanity/Pods-HelpHumanity.debug.xcconfig"; sourceTree = "<group>"; };
-		A86BA2BD24603D12007E13AE /* FirestoreGetOrg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreGetOrg.swift; sourceTree = "<group>"; };
+		A860250724615E9D00CAE4FB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		A860250924615EFD00CAE4FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A860250B2461672700CAE4FB /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		A8890C85245FF7B70033A1D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A8890C87245FFAA60033A1D6 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		A8890C89245FFB170033A1D6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A8890C8B245FFBE90033A1D6 /* Organisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organisation.swift; sourceTree = "<group>"; };
 		A8890C8F246015A70033A1D6 /* OrganisationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganisationRow.swift; sourceTree = "<group>"; };
+		A8BC485324614078008DD929 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		A8FBE974245FF5F500DC8D91 /* HelpHumanity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpHumanity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8FBE977245FF5F500DC8D91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8FBE979245FF5F500DC8D91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A8FBE97B245FF5F500DC8D91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A8FBE97B245FF5F500DC8D91 /* OrganisationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganisationView.swift; sourceTree = "<group>"; };
 		A8FBE97D245FF5F800DC8D91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8FBE980245FF5F800DC8D91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8FBE983245FF5F800DC8D91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				A8890C8B245FFBE90033A1D6 /* Organisation.swift */,
+				A8BC485324614078008DD929 /* Contact.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -86,10 +93,12 @@
 			children = (
 				A8FBE977245FF5F500DC8D91 /* AppDelegate.swift */,
 				A8FBE979245FF5F500DC8D91 /* SceneDelegate.swift */,
-				A8FBE97B245FF5F500DC8D91 /* ContentView.swift */,
-				A86BA2BD24603D12007E13AE /* FirestoreGetOrg.swift */,
+				A8FBE97B245FF5F500DC8D91 /* OrganisationView.swift */,
+				A860250924615EFD00CAE4FB /* ContentView.swift */,
 				A819619D2460F64A0080555D /* Models */,
 				A8890C8F246015A70033A1D6 /* OrganisationRow.swift */,
+				A860250724615E9D00CAE4FB /* DetailView.swift */,
+				A860250B2461672700CAE4FB /* BlurView.swift */,
 				A8890C87245FFAA60033A1D6 /* CircleImage.swift */,
 				A8890C89245FFB170033A1D6 /* MapView.swift */,
 				A8FBE97D245FF5F800DC8D91 /* Assets.xcassets */,
@@ -241,14 +250,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A860250A24615EFD00CAE4FB /* ContentView.swift in Sources */,
+				A8BC485424614078008DD929 /* Contact.swift in Sources */,
+				A860250824615E9D00CAE4FB /* DetailView.swift in Sources */,
 				A8FBE978245FF5F500DC8D91 /* AppDelegate.swift in Sources */,
+				A860250C2461672700CAE4FB /* BlurView.swift in Sources */,
 				A8890C8C245FFBE90033A1D6 /* Organisation.swift in Sources */,
 				A8890C88245FFAA60033A1D6 /* CircleImage.swift in Sources */,
-				A86BA2BE24603D12007E13AE /* FirestoreGetOrg.swift in Sources */,
 				A8890C8A245FFB170033A1D6 /* MapView.swift in Sources */,
 				A8FBE97A245FF5F500DC8D91 /* SceneDelegate.swift in Sources */,
 				A8890C90246015A70033A1D6 /* OrganisationRow.swift in Sources */,
-				A8FBE97C245FF5F500DC8D91 /* ContentView.swift in Sources */,
+				A8FBE97C245FF5F500DC8D91 /* OrganisationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

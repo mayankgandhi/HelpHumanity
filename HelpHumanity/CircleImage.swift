@@ -10,11 +10,14 @@ import SwiftUI
 
 struct CircleImage: View {
     var body: some View {
-        Image(systemName: "person").resizable().frame(width: 200, height: 200, alignment: .center)
-                .clipShape(Circle())
-                .overlay(
-                    Circle().stroke(Color.white, lineWidth: 4))
+        ZStack {
+            BlurView(.dark)
+            Image(systemName: "paperclip.circle.fill").resizable().frame(width: 130, height: 130, alignment: .center)
+                    .clipShape(Circle())
+                    .overlay(
+                        Circle().stroke(Color.white, lineWidth: 4))
                 .shadow(radius: 10)
+        }.frame(width:140,height: 140).clipShape(Circle())
         
     }
 }
