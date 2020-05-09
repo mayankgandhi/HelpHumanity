@@ -23,7 +23,6 @@ struct OrganisationRow: View {
                 Text(organisation.orgName).font(.system(size: 16))
                 Spacer()
                 Text(organisation.country).font(.system(size: 13))
-                
             }.padding(.horizontal,3)
         }
     }

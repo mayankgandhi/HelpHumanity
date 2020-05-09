@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2ECBD0F5C04491870626A28A /* Pods_HelpHumanity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B52C080515C2E8B72EEB7 /* Pods_HelpHumanity.framework */; };
+		A8319AE6246669A900EBC6D7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8319AE5246669A900EBC6D7 /* HomeView.swift */; };
+		A8319AE824666AEB00EBC6D7 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8319AE724666AEB00EBC6D7 /* UserData.swift */; };
+		A8319AEC246672B300EBC6D7 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8319AEB246672B300EBC6D7 /* CategoryRow.swift */; };
 		A860250824615E9D00CAE4FB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860250724615E9D00CAE4FB /* DetailView.swift */; };
 		A860250A24615EFD00CAE4FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860250924615EFD00CAE4FB /* ContentView.swift */; };
 		A860250C2461672700CAE4FB /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860250B2461672700CAE4FB /* BlurView.swift */; };
@@ -28,6 +31,9 @@
 /* Begin PBXFileReference section */
 		582593CC13DEA6247708778E /* Pods-HelpHumanity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpHumanity.release.xcconfig"; path = "Target Support Files/Pods-HelpHumanity/Pods-HelpHumanity.release.xcconfig"; sourceTree = "<group>"; };
 		73B5D648DB7C2A97CAAFC1AF /* Pods-HelpHumanity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpHumanity.debug.xcconfig"; path = "Target Support Files/Pods-HelpHumanity/Pods-HelpHumanity.debug.xcconfig"; sourceTree = "<group>"; };
+		A8319AE5246669A900EBC6D7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A8319AE724666AEB00EBC6D7 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		A8319AEB246672B300EBC6D7 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		A860250724615E9D00CAE4FB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		A860250924615EFD00CAE4FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A860250B2461672700CAE4FB /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
@@ -64,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				A8890C8B245FFBE90033A1D6 /* Organisation.swift */,
+				A8319AE724666AEB00EBC6D7 /* UserData.swift */,
 				A8BC485324614078008DD929 /* Contact.swift */,
 			);
 			path = Models;
@@ -97,6 +104,8 @@
 				A860250924615EFD00CAE4FB /* ContentView.swift */,
 				A819619D2460F64A0080555D /* Models */,
 				A8890C8F246015A70033A1D6 /* OrganisationRow.swift */,
+				A8319AE5246669A900EBC6D7 /* HomeView.swift */,
+				A8319AEB246672B300EBC6D7 /* CategoryRow.swift */,
 				A860250724615E9D00CAE4FB /* DetailView.swift */,
 				A860250B2461672700CAE4FB /* BlurView.swift */,
 				A8890C87245FFAA60033A1D6 /* CircleImage.swift */,
@@ -254,11 +263,14 @@
 				A8BC485424614078008DD929 /* Contact.swift in Sources */,
 				A860250824615E9D00CAE4FB /* DetailView.swift in Sources */,
 				A8FBE978245FF5F500DC8D91 /* AppDelegate.swift in Sources */,
+				A8319AEC246672B300EBC6D7 /* CategoryRow.swift in Sources */,
 				A860250C2461672700CAE4FB /* BlurView.swift in Sources */,
 				A8890C8C245FFBE90033A1D6 /* Organisation.swift in Sources */,
 				A8890C88245FFAA60033A1D6 /* CircleImage.swift in Sources */,
 				A8890C8A245FFB170033A1D6 /* MapView.swift in Sources */,
 				A8FBE97A245FF5F500DC8D91 /* SceneDelegate.swift in Sources */,
+				A8319AE6246669A900EBC6D7 /* HomeView.swift in Sources */,
+				A8319AE824666AEB00EBC6D7 /* UserData.swift in Sources */,
 				A8890C90246015A70033A1D6 /* OrganisationRow.swift in Sources */,
 				A8FBE97C245FF5F500DC8D91 /* OrganisationView.swift in Sources */,
 			);
