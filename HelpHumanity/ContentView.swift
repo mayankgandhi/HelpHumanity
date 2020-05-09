@@ -14,17 +14,16 @@ struct ContentView: View {
     
     @EnvironmentObject var data:UserData
     let dbClient = Firestore.firestore()
-    
     var body: some View {
         
         TabView {
             
-            HomeView()
+            HomeView().animation(.spring(response: 2, dampingFraction: 2, blendDuration: 2))
                 .tabItem {
                     Image(systemName: "2.square.fill")
                     Text("Home")
             }
-            OrganisationView()
+            OrganisationView().animation(.spring(response: 2, dampingFraction: 2, blendDuration: 2))
                 .tabItem {
                     Image(systemName: "1.square.fill")
                     Text("Organisations")
